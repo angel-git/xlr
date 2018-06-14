@@ -1,0 +1,27 @@
+// Exported from:        http://Angels-MacBook-Pro.local:5516/#/templates/Release15666ba2d114437a954662d0cc91028d/releasefile
+// XL Release version:   8.1.0-rc.3
+// Date created:         Thu Jun 14 13:12:05 CEST 2018
+
+xlr {
+  template('With github') {
+    scheduledStartDate Date.parse("yyyy-MM-dd'T'HH:mm:ssZ", '2018-06-14T09:00:00+0200')
+    phases {
+      phase('New Phase') {
+        tasks {
+          manual('1') {
+            
+          }
+        }
+      }
+    }
+    teams {
+      team('Template Owner') {
+        members 'admin'
+        permissions 'template#edit', 'template#lock_task', 'template#view', 'template#edit_triggers', 'template#edit_security', 'template#create_release'
+      }
+      team('Release Admin') {
+        permissions 'release#edit', 'release#lock_task', 'release#start', 'release#reassign_task', 'release#edit_blackout', 'template#view', 'release#edit_security', 'release#abort', 'release#view', 'release#edit_task'
+      }
+    }
+  }
+}
