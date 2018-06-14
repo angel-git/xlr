@@ -1,6 +1,6 @@
 // Exported from:        http://Angels-MacBook-Pro.local:5516/#/templates/Release2d1314bf5183497ca334d28bf69e7562/releasefile
 // XL Release version:   8.1.0-rc.3
-// Date created:         Thu Jun 14 14:43:33 CEST 2018
+// Date created:         Thu Jun 14 14:59:32 CEST 2018
 
 xlr {
   template('1234') {
@@ -9,6 +9,9 @@ xlr {
       phase('New Phase') {
         tasks {
           manual('1') {
+            
+          }
+          manual('This my very long task nameThis my very long task nameThis my very long task nameThis my very long task nameThis my very long task nameThis my very long task nameThis my very long task nameThis my very long task nameThis my very long task name') {
             
           }
         }
