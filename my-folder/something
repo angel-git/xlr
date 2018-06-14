@@ -1,6 +1,6 @@
 // Exported from:        http://Angels-MacBook-Pro.local:5516/#/templates/Release15666ba2d114437a954662d0cc91028d/releasefile
 // XL Release version:   8.1.0-rc.3
-// Date created:         Thu Jun 14 13:12:05 CEST 2018
+// Date created:         Thu Jun 14 13:13:18 CEST 2018
 
 xlr {
   template('With github') {
@@ -9,7 +9,9 @@ xlr {
       phase('New Phase') {
         tasks {
           manual('1') {
-            
+            failureHandler 'print(\'ghgjg\')'
+            taskFailureHandlerEnabled true
+            taskRecoverOp com.xebialabs.xlrelease.domain.recover.TaskRecoverOp.RUN_SCRIPT
           }
         }
       }
